@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function beginnen(){
+            var text = document.getElementById("invoer").value
+            var numberE = 0
+            console.log(numberE)
+            for (var position = 0; position < text.length; position++){
+                if (text.charAt(position) == "e"){
+                    numberE = numberE + 1
+                }
+            }
+            console.log(numberE)
+        
+        }
+    </script>
+</head>
+
+<body>
+    <input type=text id=invoer value="Voer een woord in">
+    <input type=button value="Klik hier" onclick=beginnen()>
+</body>
+</html>
+
+
+
+
