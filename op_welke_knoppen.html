@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-    </script>
-</head>
 
-<script>
-    var history = ""
+var history = "test "
+
     function buttonA(){
-        history = history + "U heeft op knop A geklikt. <br>"
+        var A = "U heeft op knop A geklikt. <br>"
         console.log("A")
-        console.log(history)
+        history = history.concat(A);
+        document.getElementById("output").innerHTML = history;
     }
     function buttonB(){
-        history = history + "U heeft op knop B geklikt. <br>"
+        var B = "U heeft op knop B geklikt. <br>"
         console.log("B")
-        console.log(history)
+        history = history.concat(B);
+        document.getElementById("output").innerHTML = history;
     }
     function buttonC(){
-        history = history + "U heeft op knop C geklikt. <br>"
-        console.log("B")
-        console.log(history)
+        var C = "U heeft op knop C geklikt. <br>"
+        console.log("C")
+        history = history.concat(C);
+        document.getElementById("output").innerHTML = history;
     }
     function buttonD(){
-        history = history + "U heeft op knop D geklikt. <br>"
-        console.log("B")
-        console.log(history)
+        var D = "U heeft op knop D geklikt. <br>"
+        console.log("D")
+        history = history.concat(D);
+        document.getElementById("output").innerHTML = history;
     }
-    console.log(history)
-    document.getElementById("output").innerHTML = history
-</script>
+    
+    </script>
+</head>
 
 <body>
     
