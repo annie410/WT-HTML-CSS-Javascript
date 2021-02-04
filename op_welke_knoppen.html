@@ -8,11 +8,39 @@
     </script>
 </head>
 
+<script>
+    var history = ""
+    function buttonA(){
+        history = history + "U heeft op knop A geklikt. <br>"
+        console.log("A")
+        console.log(history)
+    }
+    function buttonB(){
+        history = history + "U heeft op knop B geklikt. <br>"
+        console.log("B")
+        console.log(history)
+    }
+    function buttonC(){
+        history = history + "U heeft op knop C geklikt. <br>"
+        console.log("B")
+        console.log(history)
+    }
+    function buttonD(){
+        history = history + "U heeft op knop D geklikt. <br>"
+        console.log("B")
+        console.log(history)
+    }
+    console.log(history)
+    document.getElementById("output").innerHTML = history
+</script>
+
 <body>
+    
     <input type=button value="A" onclick=buttonA()>
     <input type=button value="B" onclick=buttonB()>
     <input type=button value="C" onclick=buttonC()>
     <input type=button value="D" onclick=buttonD()>
+    <div id=output></div>
 </body>
 </html>
 
